@@ -38,7 +38,7 @@ RUN ${APP_ROOT}/lib/tools/fromager-rpm-check.py --check-rpmdb \
 
 # LLama Stack configuration
 RUN mkdir -p ${HOME}/.llama ${HOME}/.cache
-COPY distribution/run.yaml ${APP_ROOT}/run.yaml
+COPY distribution/config.yaml ${APP_ROOT}/config.yaml
 COPY --chmod=755 distribution/entrypoint.sh ${APP_ROOT}/entrypoint.sh
 
 # Download embedding model
