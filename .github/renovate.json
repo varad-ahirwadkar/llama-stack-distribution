@@ -1,5 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "prConcurrentLimit": 30,
+  "prHourlyLimit": 4,
   "extends": [
     "github>red-hat-data-services/konflux-central//renovate/llama-stack-renovate.json"
   ]
