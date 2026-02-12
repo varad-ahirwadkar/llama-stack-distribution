@@ -42,6 +42,6 @@ COPY distribution/config.yaml ${APP_ROOT}/config.yaml
 COPY --chmod=755 distribution/entrypoint.sh ${APP_ROOT}/entrypoint.sh
 
 # Download embedding model
-RUN huggingface-cli download ibm-granite/granite-embedding-125m-english
+RUN hf download ibm-granite/granite-embedding-125m-english
 
 ENTRYPOINT [ "/opt/app-root/entrypoint.sh" ]
